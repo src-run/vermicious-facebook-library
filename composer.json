@@ -1,0 +1,52 @@
+{
+  "name"        : "src-run/vermicious-facebook-library",
+  "license"     : "MIT",
+  "type"        : "library",
+  "homepage"    : "https://src.run/vermicious-facebook-library",
+  "description" : "abstraction over facebook SDK page feed",
+  "support" : {
+    "email"  : "rmf@src.run",
+    "issues" : "https://src.run/vermicious-facebook-library/issues",
+    "source" : "https://src.run/vermicious-facebook-library/git"
+  },
+  "keywords" : [
+      "vermicious-facebook-library", "vermicious", "facebook", "library", "rmf", "src-run"
+  ],
+  "authors" : [
+    {
+      "name"    : "Rob Frawley 2nd",
+      "email"   : "rmf@src.run",
+      "homepage": "https://src.run/rmf",
+      "role"    : "Project Lead"
+    }
+  ],
+  "require" : {
+    "php"                      : "^7.0",
+    "src-run/augustus-library" : "^0.6"
+  },
+  "require-dev" : {
+    "phpunit/phpunit"        : "^5.0",
+    "codacy/coverage"        : "^1.0",
+    "satooshi/php-coveralls" : "^1.0"
+  },
+  "autoload" : {
+    "psr-4" : {
+      "SR\\Facebook\\" : "lib/"
+    }
+  },
+  "autoload-dev" : {
+    "psr-4" : {
+      "SR\\Tests\\Facebook\\" : "tests/"
+    }
+  },
+  "minimum-stability" : "dev",
+  "prefer-stable"     : true,
+  "config": {
+    "bin-dir" : "bin"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master" : "0.1-dev"
+    }
+  }
+}
